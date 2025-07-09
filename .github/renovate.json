@@ -40,7 +40,7 @@
                 "golangCycloneDXPackage = \"(?<depName>github.com/CycloneDX/cyclonedx-gomod/cmd/cyclonedx-gomod)@v(?<currentValue>.*)\""
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "github-releases",
+            "datasourceTemplate": "github-tags",
             "depNameTemplate": "{{depName}}",
             "extractVersionTemplate": "^v(?<version>.*)$",
             "autoReplaceStringTemplate": "golangCycloneDXPackage = \"{{depName}}@v{{newValue}}\""
@@ -55,7 +55,7 @@
                 "classpath \"(?<depName>org.cyclonedx:cyclonedx-gradle-plugin):(?<currentValue>.*)\""
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "gradle",
+            "datasourceTemplate": "gradle-version",
             "depNameTemplate": "{{depName}}",
             "extractVersionTemplate": "^(?<version>.*)$",
             "autoReplaceStringTemplate": "classpath \"{{depName}}:{{newValue}}\""
@@ -85,7 +85,7 @@
                 "id \"(?<depName>org.cyclonedx.bom)\" version \"(?<currentValue>.*)\""
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "gradle",
+            "datasourceTemplate": "gradle-version",
             "depNameTemplate": "{{depName}}",
             "extractVersionTemplate": "^(?<version>.*)$",
             "autoReplaceStringTemplate": "id \"{{depName}}\" version \"{{newValue}}\""
@@ -100,7 +100,7 @@
                 "(?<depName>github.com/CycloneDX/cyclonedx-gomod/cmd/cyclonedx-gomod)@v(?<currentValue>.*)"
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "github-releases",
+            "datasourceTemplate": "github-tags",
             "depNameTemplate": "{{depName}}",
             "extractVersionTemplate": "^(?<version>.*)$",
             "autoReplaceStringTemplate": "{{depName}}@v{{newValue}}"
