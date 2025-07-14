@@ -67,7 +67,7 @@
                 "cmd/mavenBuild.go$/"
             ],
             "matchStrings": [
-                "mvnCycloneDXPackage = \"org.cyclonedx:(?<depName>cyclonedx-maven-plugin):(?<currentValue>.*)\""
+                "mvnCycloneDXPackage\\s*=\\s*\"org.cyclonedx:(?<depName>cyclonedx-maven-plugin):(?<currentValue>.*)\""
             ],
             "depTypeTemplate": "dependencies",
             "datasourceTemplate": "maven",
