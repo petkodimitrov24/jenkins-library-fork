@@ -41,9 +41,9 @@
             ],
             "depTypeTemplate": "dependencies",
             "datasourceTemplate": "github-releases",
-            "depNameTemplate": "CycloneDX/{{{depName}}}",
+            "depNameTemplate": "{{{depName}}}",
             "extractVersionTemplate": "v(?<version>.*)",
-            "autoReplaceStringTemplate": "golangCycloneDXPackage = \"github.com/CycloneDX/{{{depName}}}/cmd/cyclonedx-gomod@{{{newValue}}}\""
+            "autoReplaceStringTemplate": "golangCycloneDXPackage = \"github.com/CycloneDX/{{{depName}}}/cmd/cyclonedx-gomod@v{{{newValue}}}\""
         },
         {
             "customType": "regex",
