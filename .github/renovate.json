@@ -37,13 +37,13 @@
                 "cmd\/golangBuild.go"
             ],
             "matchStrings": [
-                "github.com\/CycloneDX\/(?<depName>cyclonedx-gomod)\/cmd\/cyclonedx-gomod@v(?<currentValue>[^\"]+)"
+                "golangCycloneDXPackage\\s*=\\s*github.com\/CycloneDX\/(?<depName>cyclonedx-gomod)\/cmd\/cyclonedx-gomod@v(?<currentValue>[^\"]+)"
             ],
             "depTypeTemplate": "dependencies",
             "datasourceTemplate": "github-releases",
             "depNameTemplate": "CycloneDX/{{{depName}}}",
             "extractVersionTemplate": "v(?<version>.*)",
-            "autoReplaceStringTemplate": "github.com/CycloneDX/{{{depName}}}/cmd/cyclonedx-gomod@v{{{newValue}}}"
+            "autoReplaceStringTemplate": "golangCycloneDXPackage = github.com/CycloneDX/{{{depName}}}/cmd/cyclonedx-gomod@v{{{newValue}}}"
         },
         {
             "customType": "regex",
