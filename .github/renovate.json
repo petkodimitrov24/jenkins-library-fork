@@ -43,7 +43,7 @@
             "datasourceTemplate": "github-releases",
             "depNameTemplate": "CycloneDX/{{depName}}",
             "extractVersionTemplate": "^v(?<version>.*)$",
-            "autoReplaceStringTemplate": "golangCycloneDXPackage = \"github.com/CycloneDX/{{depName}}/cmd/cyclonedx-gomod@v{{newValue}}\""
+            "autoReplaceStringTemplate": "github.com/CycloneDX/{{depName}}/cmd/cyclonedx-gomod@v{{newValue}}"
         },
         {
             "customType": "regex",
