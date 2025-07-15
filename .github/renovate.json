@@ -37,7 +37,7 @@
                 "cmd/"
             ],
             "matchStrings": [
-                "github.com/CycloneDX/(?<depName>cyclonedx-gomod)/cmd/cyclonedx-gomod@v(?<currentValue>.*)"
+                "github.com/CycloneDX/cyclonedx-gomod/cmd/cyclonedx-gomod@v(?<currentValue>.*?)"
             ],
             "depTypeTemplate": "dependencies",
             "datasourceTemplate": "github-releases",
