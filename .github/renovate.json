@@ -58,7 +58,7 @@
             "datasourceTemplate": "github-releases",
             "depNameTemplate": "CycloneDX/{{depName}}",
             "extractVersionTemplate": "(?<version>.*)",
-            "autoReplaceStringTemplate": "classpath \"org.cyclonedx:{{depName}}:{{newValue}}\""
+            "autoReplaceStringTemplate": "classpath \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
         },
         {
             "customType": "regex",
@@ -70,10 +70,10 @@
                 "mvnCycloneDXPackage\\s*=\\s*\"org.cyclonedx:(?<depName>cyclonedx-maven-plugin):(?<currentValue>[^\"]+)\""
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "maven",
-            "depNameTemplate": "{{depName}}",
+            "datasourceTemplate": "github-releases",
+            "depNameTemplate": "CycloneDX/{{{depName}}}",
             "extractVersionTemplate": "(?<version>.*)",
-            "autoReplaceStringTemplate": "mvnCycloneDXPackage = \"org.cyclonedx:{{depName}}:{{newValue}}\""
+            "autoReplaceStringTemplate": "mvnCycloneDXPackage = \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
         },
         {
             "customType": "regex",
