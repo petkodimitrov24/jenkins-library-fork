@@ -79,7 +79,7 @@
             "customType": "regex",
             "matchStringsStrategy": "any",
             "managerFilePatterns": [
-                "integration/testdata/TestGradleIntegration/java-project-with-bom-plugin/build.gradle$/"
+                "integration\/testdata\/TestGradleIntegration\/java-project-with-bom-plugin\/build.gradle"
             ],
             "matchStrings": [
                 "id \"(?<depName>org.cyclonedx.bom)\" version \"(?<currentValue>.*)\""
@@ -94,7 +94,7 @@
             "customType": "regex",
             "matchStringsStrategy": "any",
             "managerFilePatterns": [
-                "integration/integration_golang_test.go$/"
+                "integration\/integration_golang_test.go"
             ],
             "matchStrings": [
                 "golangCycloneDXPackage\\s*=\\s*\"github.com\/CycloneDX\/(?<depName>cyclonedx-gomod)\/cmd\/cyclonedx-gomod@v(?<currentValue>[^\"]+)\""
