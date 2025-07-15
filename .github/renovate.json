@@ -33,6 +33,9 @@
         {
             "customType": "regex",
             "matchStringsStrategy": "any",
+            "managerFilePatterns": [
+                "cmd/"
+            ],
             "matchStrings": [
                 "golangCycloneDXPackage\\s*=\\s*\"github.com\\/CycloneDX\\/(?<depName>cyclonedx-gomod)\\/cmd\\/cyclonedx-gomod@v(?<currentValue>.*)\""
             ],
