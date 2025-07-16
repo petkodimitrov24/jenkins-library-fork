@@ -58,7 +58,7 @@
             "datasourceTemplate": "gradle-version",
             "depNameTemplate": "org.cyclonedx:{{{depName}}}",
             "extractVersionTemplate": "^(?<version>.*)",
-            "autoReplaceStringTemplate": "classpath \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
+            "autoReplaceStringTemplate": "classpath \"{{{depName}}}:{{{newValue}}}\""
         },
         {
             "customType": "regex",
@@ -73,7 +73,7 @@
             "datasourceTemplate": "maven",
             "depNameTemplate": "org.cyclonedx:{{{depName}}}",
             "extractVersionTemplate": "^(?<version>.*)",
-            "autoReplaceStringTemplate": "mvnCycloneDXPackage = \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
+            "autoReplaceStringTemplate": "mvnCycloneDXPackage = \"{{{depName}}}:{{{newValue}}}\""
         },
         {
             "customType": "regex",
