@@ -24,7 +24,7 @@ import (
 const (
 	mvnBomFilename       = "bom-maven"
 	mvnSimpleBomFilename = "simple-bom-maven"
-	mvnCycloneDXPackage  = "org.cyclonedx:cyclonedx-maven-plugin:2.8.0"
+	mvnCycloneDXPackage = "org.cyclonedx:cyclonedx-maven-plugin:2.9.1"
 )
 
 func mavenBuild(config mavenBuildOptions, telemetryData *telemetry.CustomData, commonPipelineEnvironment *mavenBuildCommonPipelineEnvironment) {
