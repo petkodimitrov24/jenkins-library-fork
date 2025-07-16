@@ -55,9 +55,9 @@
                 "classpath \"org.cyclonedx:(?<depName>cyclonedx-gradle-plugin):(?<currentValue>[^\"]+)\""
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "github-releases",
-            "depNameTemplate": "CycloneDX/{{{depName}}}",
-            "extractVersionTemplate": "v(?<version>.*)",
+            "datasourceTemplate": "gradle-version",
+            "depNameTemplate": "org.cyclonedx:{{{depName}}}",
+            "extractVersionTemplate": "^(?<version>.*)",
             "autoReplaceStringTemplate": "classpath \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
         },
         {
