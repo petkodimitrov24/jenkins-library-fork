@@ -52,7 +52,7 @@
                 "cmd\/gradleExecuteBuild.go"
             ],
             "matchStrings": [
-                "classpath \"org.cyclonedx:(?<depName>cyclonedx-gradle-plugin):(?<currentValue>[^\"]+)\""
+                "classpath \"org.cyclonedx:(?<depName>cyclonedx-gradle-plugin):(?<currentValue>[^\"\n]+)\""
             ],
             "depTypeTemplate": "dependencies",
             "datasourceTemplate": "gradle-version",
@@ -70,9 +70,9 @@
                 "mvnCycloneDXPackage\\s*=\\s*\"org.cyclonedx:(?<depName>cyclonedx-maven-plugin):(?<currentValue>[^\"]+)\""
             ],
             "depTypeTemplate": "dependencies",
-            "datasourceTemplate": "github-releases",
-            "depNameTemplate": "CycloneDX/{{{depName}}}",
-            "extractVersionTemplate": "(?<version>.*)",
+            "datasourceTemplate": "maven",
+            "depNameTemplate": "org.cyclonedx:{{{depName}}}",
+            "extractVersionTemplate": "^(?<version>.*)",
             "autoReplaceStringTemplate": "mvnCycloneDXPackage = \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
         },
         {
