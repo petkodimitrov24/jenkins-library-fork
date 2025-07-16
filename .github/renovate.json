@@ -56,7 +56,7 @@
             ],
             "depTypeTemplate": "dependencies",
             "datasourceTemplate": "github-releases",
-            "depNameTemplate": "CycloneDX/{{depName}}",
+            "depNameTemplate": "CycloneDX/{{{depName}}}",
             "extractVersionTemplate": "(?<version>.*)",
             "autoReplaceStringTemplate": "classpath \"org.cyclonedx:{{{depName}}}:{{{newValue}}}\""
         },
